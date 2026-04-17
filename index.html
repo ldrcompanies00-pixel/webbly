@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="generator" content="Hostinger Horizons" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Webbly - Agenție Premium Web Design & Marketing Digital</title>
+
+  <!-- Google Consent Mode Default (SMART VERSION) -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+  
+    // 1. Create the default "Denied" state
+    var defaultConsent = {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'wait_for_update': 2000
+    };
+  
+    // 2. Check if the user already accepted cookies in the past
+    try {
+      var savedConsent = localStorage.getItem('cookieConsent');
+      if (savedConsent) {
+        var parsed = JSON.parse(savedConsent);
+        defaultConsent.analytics_storage = parsed.statistics ? 'granted' : 'denied';
+        defaultConsent.ad_storage = parsed.marketing ? 'granted' : 'denied';
+        defaultConsent.ad_user_data = parsed.marketing ? 'granted' : 'denied';
+        defaultConsent.ad_personalization = parsed.marketing ? 'granted' : 'denied';
+      }
+    } catch (e) {}
+  
+    // 3. Apply the consent instantly
+    gtag('consent', 'default', defaultConsent);
+  </script>
+
+  <!-- 2. Google Tag Manager Main Script -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-NW5FFLBH');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Preconnects -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="anonymous" />
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+  <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous" />
+  <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NW5FFLBH" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
